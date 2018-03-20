@@ -36,17 +36,29 @@ texture = ExtResource( 9 )
 
 texture = ExtResource( 9 )
 
-[node name="flute" parent="body/arm_l" index="0"]
+[node name="flute" type="Sprite" parent="body/arm_l" index="0"]
 
+position = Vector2( -0.0829277, 31.6508 )
+rotation = 1.44688
 texture = ExtResource( 9 )
+offset = Vector2( -2, -32 )
+region_enabled = true
+region_rect = Rect2( 217, 6, 12, 69 )
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="arm_r" parent="body" index="2"]
 
 texture = ExtResource( 9 )
 
-[node name="tail" parent="body" index="3"]
+[node name="tail" type="Sprite" parent="body" index="3"]
 
+position = Vector2( -10, -12 )
+z_index = -2
 texture = ExtResource( 9 )
+offset = Vector2( -28, -4 )
+region_enabled = true
+region_rect = Rect2( 6, 204, 58, 49 )
+_sections_unfolded = [ "Offset", "Z Index" ]
 
 [node name="leg_l" parent="." index="2"]
 

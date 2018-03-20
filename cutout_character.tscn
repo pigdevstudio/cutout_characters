@@ -46,15 +46,6 @@ region_enabled = true
 region_rect = Rect2( 134, 204, 20, 47 )
 _sections_unfolded = [ "Region", "Z Index" ]
 
-[node name="flute" type="Sprite" parent="body/arm_l" index="0"]
-
-position = Vector2( -0.0829277, 31.6508 )
-rotation = 1.44688
-offset = Vector2( -2, -32 )
-region_enabled = true
-region_rect = Rect2( 217, 6, 12, 69 )
-_sections_unfolded = [ "Transform", "Z Index" ]
-
 [node name="arm_r" type="Sprite" parent="body" index="2"]
 
 position = Vector2( -14, -46.5 )
@@ -63,15 +54,6 @@ offset = Vector2( 0, 20 )
 region_enabled = true
 region_rect = Rect2( 108, 204, 20, 47 )
 _sections_unfolded = [ "Region" ]
-
-[node name="tail" type="Sprite" parent="body" index="3"]
-
-position = Vector2( -10, -12 )
-z_index = -2
-offset = Vector2( -28, -4 )
-region_enabled = true
-region_rect = Rect2( 6, 204, 58, 49 )
-_sections_unfolded = [ "Offset", "Z Index" ]
 
 [node name="leg_l" type="Sprite" parent="." index="2"]
 
