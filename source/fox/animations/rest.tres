@@ -306,7 +306,7 @@ tracks/24/keys = {
 "values": [ Rect2( 9, -1, 83, 91 ) ]
 }
 tracks/25/type = "value"
-tracks/25/path = NodePath(".:position")
+tracks/25/path = NodePath(".:rotation_degrees")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/imported = false
@@ -315,10 +315,10 @@ tracks/25/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 0, 0 ) ]
+"values": [ 0.0 ]
 }
 tracks/26/type = "value"
-tracks/26/path = NodePath(".:rotation_degrees")
+tracks/26/path = NodePath(".:position")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/imported = false
@@ -327,6 +327,6 @@ tracks/26/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0 ]
+"values": [ Vector2( 0, 0 ) ]
 }
 
