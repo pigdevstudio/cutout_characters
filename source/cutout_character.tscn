@@ -1,0 +1,94 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://cutout_character.gd" type="Script" id=1]
+
+[node name="cutout_character" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="animator" type="AnimationPlayer" parent="." index="0"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.2
+playback_speed = 1.0
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+[node name="body" type="Sprite" parent="." index="1"]
+
+position = Vector2( 0, -28 )
+rotation = -0.00526074
+offset = Vector2( 0, -28 )
+region_enabled = true
+region_rect = Rect2( 201, 98, 48, 70 )
+_sections_unfolded = [ "Region" ]
+
+[node name="head" type="Sprite" parent="body" index="0"]
+
+show_behind_parent = true
+position = Vector2( 2, -54 )
+z_index = -1
+offset = Vector2( -12, -38 )
+region_enabled = true
+region_rect = Rect2( 9, -1, 83, 91 )
+_sections_unfolded = [ "Region", "Visibility", "Z Index" ]
+
+[node name="arm_l" type="Sprite" parent="body" index="1"]
+
+position = Vector2( 13.5, -44 )
+rotation = -0.416584
+z_index = -1
+offset = Vector2( 0, 18 )
+region_enabled = true
+region_rect = Rect2( 134, 204, 20, 47 )
+_sections_unfolded = [ "Region", "Z Index" ]
+
+[node name="flute" type="Sprite" parent="body/arm_l" index="0"]
+
+position = Vector2( -0.0829277, 31.6508 )
+rotation = 1.44688
+offset = Vector2( -2, -32 )
+region_enabled = true
+region_rect = Rect2( 217, 6, 12, 69 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="arm_r" type="Sprite" parent="body" index="2"]
+
+position = Vector2( -14, -46.5 )
+rotation = 0.362102
+offset = Vector2( 0, 20 )
+region_enabled = true
+region_rect = Rect2( 108, 204, 20, 47 )
+_sections_unfolded = [ "Region" ]
+
+[node name="tail" type="Sprite" parent="body" index="3"]
+
+position = Vector2( -10, -12 )
+z_index = -2
+offset = Vector2( -28, -4 )
+region_enabled = true
+region_rect = Rect2( 6, 204, 58, 49 )
+_sections_unfolded = [ "Offset", "Z Index" ]
+
+[node name="leg_l" type="Sprite" parent="." index="2"]
+
+position = Vector2( 12, -40 )
+z_index = -1
+offset = Vector2( 0, 18 )
+region_enabled = true
+region_rect = Rect2( 134, 205, 20, 47 )
+_sections_unfolded = [ "Region", "Z Index" ]
+
+[node name="leg_r" type="Sprite" parent="." index="3"]
+
+position = Vector2( -10, -42 )
+z_index = -1
+offset = Vector2( 0, 20 )
+region_enabled = true
+region_rect = Rect2( 108, 204, 20, 47 )
+_sections_unfolded = [ "Region", "Z Index" ]
+
+
