@@ -2,7 +2,7 @@
 
 [ext_resource path="res://cutout_character.gd" type="Script" id=1]
 
-[node name="cutout_character" type="Node2D" index="0"]
+[node name="cutout_character" type="Position2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]

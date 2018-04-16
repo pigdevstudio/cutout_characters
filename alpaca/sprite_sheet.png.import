@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon_highres.png-350338673ae1ec574351102772a6e275.stex"
+path="res://.import/sprite_sheet.png-9f0807939819b5d9c8227127beb4a9a7.stex"
 
 [deps]
 
-source_file="res://icon_highres.png"
-source_md5="0c09b98c73536fd5f7f0df4d24935764"
+source_file="res://alpaca/sprite_sheet.png"
+source_md5="dbc480d741a8bfcee5581ae88beb4120"
 
-dest_files=[ "res://.import/icon_highres.png-350338673ae1ec574351102772a6e275.stex" ]
-dest_md5="0c34f318b49cc488b3dcecb51988a537"
+dest_files=[ "res://.import/sprite_sheet.png-9f0807939819b5d9c8227127beb4a9a7.stex" ]
+dest_md5="fc09ef754a3b0f70657b6183f47be2cb"
 
 [params]
 
