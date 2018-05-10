@@ -1,0 +1,99 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://cutout_character.gd" type="Script" id=1]
+[ext_resource path="res://pig/animations/setup.tres" type="Animation" id=2]
+[ext_resource path="res://pig/animations/dash.tres" type="Animation" id=3]
+[ext_resource path="res://pig/animations/fall.tres" type="Animation" id=4]
+[ext_resource path="res://pig/animations/idle.tres" type="Animation" id=5]
+[ext_resource path="res://pig/animations/jump.tres" type="Animation" id=6]
+[ext_resource path="res://pig/animations/walk.tres" type="Animation" id=7]
+[ext_resource path="res://pig/leg_l.png" type="Texture" id=8]
+[ext_resource path="res://pig/leg_r.png" type="Texture" id=9]
+[ext_resource path="res://pig/body.png" type="Texture" id=10]
+[ext_resource path="res://pig/arm_r.png" type="Texture" id=11]
+[ext_resource path="res://pig/arm_l.png" type="Texture" id=12]
+[ext_resource path="res://pig/head.png" type="Texture" id=13]
+
+[node name="cutout_character" type="Node2D" index="0"]
+
+position = Vector2( 0, -13.592 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="animator" type="AnimationPlayer" parent="." index="0"]
+
+root_node = NodePath("..")
+autoplay = "idle"
+playback_process_mode = 1
+playback_default_blend_time = 0.1
+playback_speed = 1.0
+anims/SETUP = ExtResource( 2 )
+anims/dash = ExtResource( 3 )
+anims/fall = ExtResource( 4 )
+anims/idle = ExtResource( 5 )
+anims/jump = ExtResource( 6 )
+anims/walk = ExtResource( 7 )
+blend_times = [  ]
+_sections_unfolded = [ "Pause", "Playback Options" ]
+
+[node name="leg_l" type="Sprite" parent="." index="1"]
+
+position = Vector2( 4.61318, 4.60583 )
+rotation = 0.0951607
+texture = ExtResource( 8 )
+offset = Vector2( 0, 6.816 )
+region_rect = Rect2( 208, 160, 48, 96 )
+region_filter_clip = true
+_sections_unfolded = [ "Offset", "Region", "Transform", "Z Index" ]
+
+[node name="leg_r" type="Sprite" parent="." index="2"]
+
+position = Vector2( -8.51058, 2.3941 )
+rotation = -0.107529
+texture = ExtResource( 9 )
+offset = Vector2( 0, 6.816 )
+region_rect = Rect2( 128, 160, 48, 96 )
+region_filter_clip = true
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="body" type="Sprite" parent="." index="3"]
+
+position = Vector2( 0, 4.97553 )
+texture = ExtResource( 10 )
+offset = Vector2( 1, -21.184 )
+_sections_unfolded = [ "Offset", "Region", "Transform", "Update" ]
+
+[node name="arm_r" type="Sprite" parent="body" index="0"]
+
+position = Vector2( -26, -25 )
+rotation = 0.519927
+texture = ExtResource( 11 )
+offset = Vector2( 0, 8 )
+region_rect = Rect2( 456, 176, 56, 80 )
+region_filter_clip = true
+_sections_unfolded = [ "Z Index" ]
+
+[node name="arm_l" type="Sprite" parent="body" index="1"]
+
+show_behind_parent = true
+position = Vector2( 23.6416, -26.75 )
+rotation = -1.44951
+z_index = -1
+texture = ExtResource( 12 )
+offset = Vector2( 0, 8 )
+region_rect = Rect2( 384, 176, 56, 80 )
+region_filter_clip = true
+_sections_unfolded = [ "Offset", "Transform", "Visibility", "Z Index" ]
+
+[node name="head" type="Sprite" parent="body" index="2"]
+
+position = Vector2( 0, -40 )
+rotation = -0.0364049
+texture = ExtResource( 13 )
+offset = Vector2( 1, -21.184 )
+region_rect = Rect2( 0, 0, 128, 128 )
+region_filter_clip = true
+_sections_unfolded = [ "Region", "Transform", "Z Index" ]
+
+
