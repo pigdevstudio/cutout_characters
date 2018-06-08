@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fight_glove_l.png-92d6fc96691cc2c1e4668f617cee28e5.stex"
+path="res://.import/pig_face_sprites.png-ae7814d54e013cfd3faf9c57e5851ab9.stex"
 
 [deps]
 
-source_file="res://pig/fight_glove_l.png"
-source_md5="d7a13520f463f2553874c6e300601d73"
+source_file="res://pig/pig_face_sprites.png"
+source_md5="733321f8e6a88cb80d331be011c54ad0"
 
-dest_files=[ "res://.import/fight_glove_l.png-92d6fc96691cc2c1e4668f617cee28e5.stex" ]
-dest_md5="42dbe7495cb174f49a97867b95cf5801"
+dest_files=[ "res://.import/pig_face_sprites.png-ae7814d54e013cfd3faf9c57e5851ab9.stex" ]
+dest_md5="88ba2abfda9b0d52f3d21284f3e3a984"
 
 [params]
 

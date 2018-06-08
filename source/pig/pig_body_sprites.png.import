@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sprite_sheet.png-5e9cf15c8e0569eb6911575af9bbaf61.stex"
+path="res://.import/pig_body_sprites.png-d1ec510a1a62d3b4b73d35f847d71c5a.stex"
 
 [deps]
 
-source_file="res://pig/sprite_sheet.png"
-source_md5="42e33ffbdaae13873384feb18160f539"
+source_file="res://pig/pig_body_sprites.png"
+source_md5="2208e280b01dcf64768c7e2adfd30cb9"
 
-dest_files=[ "res://.import/sprite_sheet.png-5e9cf15c8e0569eb6911575af9bbaf61.stex" ]
-dest_md5="359f7bd45ec2cd423ededf9c8bf8991b"
+dest_files=[ "res://.import/pig_body_sprites.png-d1ec510a1a62d3b4b73d35f847d71c5a.stex" ]
+dest_md5="06a91e6f1bde16294be640f12e5228aa"
 
 [params]
 
