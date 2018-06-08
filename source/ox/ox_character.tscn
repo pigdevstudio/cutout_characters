@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://cutout_character.gd" type="Script" id=1]
 [ext_resource path="res://ox/animations/setup.tres" type="Animation" id=2]
@@ -7,12 +7,11 @@
 [ext_resource path="res://ox/animations/idle.tres" type="Animation" id=5]
 [ext_resource path="res://ox/animations/jump.tres" type="Animation" id=6]
 [ext_resource path="res://ox/animations/walk.tres" type="Animation" id=7]
-[ext_resource path="res://ox/animations/walk_hammer.tres" type="Animation" id=8]
-[ext_resource path="res://ox/animations/wall.tres" type="Animation" id=9]
-[ext_resource path="res://ox/ox_body_sprites.png" type="Texture" id=10]
-[ext_resource path="res://ox/ox_face_sprites.png" type="Texture" id=11]
+[ext_resource path="res://ox/animations/wall.tres" type="Animation" id=8]
+[ext_resource path="res://ox/ox_body_sprites.png" type="Texture" id=9]
+[ext_resource path="res://ox/ox_face_sprites.png" type="Texture" id=10]
 
-[node name="ox_character" type="Position2D"]
+[node name="ox_character" type="Position2D" index="0"]
 
 scale = Vector2( 0.75, 0.75 )
 script = ExtResource( 1 )
@@ -31,8 +30,7 @@ anims/fall = ExtResource( 4 )
 anims/idle = ExtResource( 5 )
 anims/jump = ExtResource( 6 )
 anims/walk = ExtResource( 7 )
-anims/walk_hammer = ExtResource( 8 )
-anims/wall = ExtResource( 9 )
+anims/wall = ExtResource( 8 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
 
@@ -44,7 +42,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 3.62958, -25.0478 )
 rotation = -0.00526074
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 offset = Vector2( 2.39258, -46.2841 )
 region_enabled = true
 region_rect = Rect2( 1, 64, 101, 107 )
@@ -53,7 +51,7 @@ _sections_unfolded = [ "Region" ]
 [node name="head" type="Sprite" parent="sprites/body" index="0"]
 
 position = Vector2( -4.28885, -71.8452 )
-texture = ExtResource( 11 )
+texture = ExtResource( 10 )
 offset = Vector2( 27.3104, -45.2847 )
 region_enabled = true
 region_rect = Rect2( 0, 16, 128, 112 )
@@ -65,7 +63,7 @@ _sections_unfolded = [ "Region", "Visibility", "Z Index" ]
 position = Vector2( 35.2036, -45.6544 )
 rotation = -0.416584
 z_index = -1
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 offset = Vector2( 12.9859, 4.10221 )
 region_enabled = true
 region_rect = Rect2( 192, 154, 38, 38 )
@@ -75,7 +73,7 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 position = Vector2( -41.8417, -44.2819 )
 rotation = 0.362102
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 offset = Vector2( -7.61963, 3.01789 )
 region_enabled = true
 region_rect = Rect2( 128, 154, 38, 38 )
@@ -87,7 +85,7 @@ show_behind_parent = true
 position = Vector2( -37.221, -7.38097 )
 rotation = -0.255965
 z_index = -1
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 offset = Vector2( -16.514, -29.0504 )
 region_enabled = true
 region_rect = Rect2( 128, 67, 64, 61 )
@@ -97,7 +95,7 @@ _sections_unfolded = [ "Visibility", "Z Index" ]
 
 position = Vector2( 23.8485, -47.7066 )
 z_index = -1
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 offset = Vector2( 0, 18 )
 region_enabled = true
 region_rect = Rect2( 64, 200, 31, 56 )
@@ -107,7 +105,7 @@ _sections_unfolded = [ "Region", "Z Index" ]
 
 position = Vector2( -18.8922, -49.7066 )
 z_index = -1
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 offset = Vector2( 0, 20 )
 region_enabled = true
 region_rect = Rect2( 1, 200, 31, 56 )
