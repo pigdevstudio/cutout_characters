@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/goat_faces.png-b614d89ce91dc867e0a83bc1d2adc4ae.stex"
+path="res://.import/ox_body_sprites.png-6b8e93eea509c3f13ca4622c76a9651f.stex"
 
 [deps]
 
-source_file="res://goat/goat_faces.png"
-source_md5="543baf4999cf3072f0ea6bc4ce5b2e74"
+source_file="res://ox/ox_body_sprites.png"
+source_md5="c05015a8a0ce27fe1ff72490735d3b4d"
 
-dest_files=[ "res://.import/goat_faces.png-b614d89ce91dc867e0a83bc1d2adc4ae.stex" ]
-dest_md5="5c581f3355c564cfe9685cb5b3c095a8"
+dest_files=[ "res://.import/ox_body_sprites.png-6b8e93eea509c3f13ca4622c76a9651f.stex" ]
+dest_md5="d6a983e2aa2ac2fa2f1993f01af49d92"
 
 [params]
 
