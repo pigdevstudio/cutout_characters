@@ -1,0 +1,112 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://cutout_character.gd" type="Script" id=1]
+[ext_resource path="res://goat/animations/setup.tres" type="Animation" id=2]
+[ext_resource path="res://goat/animations/dash.tres" type="Animation" id=3]
+[ext_resource path="res://goat/animations/fall.tres" type="Animation" id=4]
+[ext_resource path="res://goat/animations/idle.tres" type="Animation" id=5]
+[ext_resource path="res://goat/animations/jump.tres" type="Animation" id=6]
+[ext_resource path="res://goat/animations/walk.tres" type="Animation" id=7]
+[ext_resource path="res://goat/animations/wall.tres" type="Animation" id=8]
+[ext_resource path="res://goat/goat_body_sprites.png" type="Texture" id=9]
+[ext_resource path="res://goat/goat_face_sprites.png" type="Texture" id=10]
+
+[node name="goat_character" type="Position2D" index="0"]
+
+scale = Vector2( 0.75, 0.75 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="animator" type="AnimationPlayer" parent="." index="0"]
+
+root_node = NodePath("../sprites")
+autoplay = "idle"
+playback_process_mode = 1
+playback_default_blend_time = 0.08
+playback_speed = 1.0
+anims/SETUP = ExtResource( 2 )
+anims/dash = ExtResource( 3 )
+anims/fall = ExtResource( 4 )
+anims/idle = ExtResource( 5 )
+anims/jump = ExtResource( 6 )
+anims/walk = ExtResource( 7 )
+anims/wall = ExtResource( 8 )
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+[node name="sprites" type="Node2D" parent="." index="1"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="body" type="Sprite" parent="sprites" index="0"]
+
+position = Vector2( 0.333333, -32 )
+texture = ExtResource( 9 )
+offset = Vector2( 2.05925, -15.2841 )
+region_enabled = true
+region_rect = Rect2( 1, 64, 42, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="head" type="Sprite" parent="sprites/body" index="0"]
+
+position = Vector2( -2, -31.3333 )
+texture = ExtResource( 10 )
+offset = Vector2( 17.9771, -30.9514 )
+region_enabled = true
+region_rect = Rect2( 1, 36, 68, 92 )
+region_filter_clip = true
+_sections_unfolded = [ "Region", "Visibility", "Z Index" ]
+
+[node name="arm_l" type="Sprite" parent="sprites/body" index="1"]
+
+position = Vector2( 11.6667, -28.6667 )
+rotation = -0.555427
+z_index = -1
+texture = ExtResource( 9 )
+offset = Vector2( 0.319233, 15.1022 )
+region_enabled = true
+region_rect = Rect2( 193, 156, 14, 36 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="arm_r" type="Sprite" parent="sprites/body" index="2"]
+
+position = Vector2( -11.6667, -35.3333 )
+rotation = 0.556771
+texture = ExtResource( 9 )
+offset = Vector2( 0.713704, 15.3512 )
+region_enabled = true
+region_rect = Rect2( 129, 156, 14, 36 )
+_sections_unfolded = [ "Region" ]
+
+[node name="tail" type="Sprite" parent="sprites/body" index="3"]
+
+show_behind_parent = true
+position = Vector2( -17.3333, 3.33333 )
+z_index = -1
+texture = ExtResource( 9 )
+offset = Vector2( -7.84733, 0.282934 )
+region_enabled = true
+region_rect = Rect2( 129, 115, 20, 13 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="leg_l" type="Sprite" parent="sprites" index="1"]
+
+position = Vector2( 9.66667, -36 )
+z_index = -1
+texture = ExtResource( 9 )
+offset = Vector2( 0, 18 )
+region_enabled = true
+region_rect = Rect2( 65, 220, 14, 36 )
+_sections_unfolded = [ "Region", "Z Index" ]
+
+[node name="leg_r" type="Sprite" parent="sprites" index="2"]
+
+position = Vector2( -8.66667, -38 )
+z_index = -1
+texture = ExtResource( 9 )
+offset = Vector2( 0, 20 )
+region_enabled = true
+region_rect = Rect2( 1, 220, 14, 36 )
+_sections_unfolded = [ "Region", "Z Index" ]
+
+
