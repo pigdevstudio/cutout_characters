@@ -68,8 +68,7 @@ _sections_unfolded = [ "Region" ]
 
 [node name="head" type="Sprite" parent="sprites/body" index="0"]
 
-position = Vector2( 3.26825, -50.9835 )
-rotation = -0.118901
+position = Vector2( 1.27354, -51.994 )
 texture = ExtResource( 10 )
 offset = Vector2( 0.128969, -21.4457 )
 region_enabled = true
