@@ -1336,7 +1336,6 @@ tracks/14/keys = {
 
 [node name="mouse_character" type="Position2D"]
 
-scale = Vector2( 0.75, 0.75 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="animator" type="AnimationPlayer" parent="." index="0"]

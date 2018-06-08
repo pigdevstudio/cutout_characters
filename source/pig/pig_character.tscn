@@ -499,7 +499,6 @@ tracks/12/keys = {
 [node name="pig_character" type="Position2D"]
 
 position = Vector2( 0, -1.842 )
-scale = Vector2( 0.75, 0.75 )
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 

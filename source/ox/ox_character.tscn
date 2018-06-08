@@ -11,9 +11,8 @@
 [ext_resource path="res://ox/ox_body_sprites.png" type="Texture" id=9]
 [ext_resource path="res://ox/ox_face_sprites.png" type="Texture" id=10]
 
-[node name="ox_character" type="Position2D" index="0"]
+[node name="ox_character" type="Position2D"]
 
-scale = Vector2( 0.75, 0.75 )
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 

@@ -12,7 +12,6 @@
 
 [node name="alpaca_character" type="Position2D"]
 
-scale = Vector2( 0.75, 0.75 )
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
