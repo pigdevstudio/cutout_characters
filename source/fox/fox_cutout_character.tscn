@@ -1125,7 +1125,7 @@ tracks/14/keys = {
 "values": [ Vector2( -1, 1 ) ]
 }
 
-[node name="fox_character" type="Position2D"]
+[node name="fox_character" type="Position2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
@@ -1151,7 +1151,27 @@ _sections_unfolded = [ "Playback Options" ]
 
 _sections_unfolded = [ "Transform" ]
 
-[node name="body" type="Sprite" parent="sprites" index="0"]
+[node name="leg_l" type="Sprite" parent="sprites" index="0"]
+
+position = Vector2( 12, -37.5 )
+z_index = -1
+texture = ExtResource( 3 )
+offset = Vector2( 0, 18 )
+region_enabled = true
+region_rect = Rect2( 65, 216, 14, 39 )
+_sections_unfolded = [ "Region", "Z Index" ]
+
+[node name="leg_r" type="Sprite" parent="sprites" index="1"]
+
+position = Vector2( -10, -39 )
+z_index = -1
+texture = ExtResource( 3 )
+offset = Vector2( 0, 20 )
+region_enabled = true
+region_rect = Rect2( 1, 216, 14, 39 )
+_sections_unfolded = [ "Region", "Z Index" ]
+
+[node name="body" type="Sprite" parent="sprites" index="2"]
 
 position = Vector2( 2.40747e-07, -36.5 )
 rotation = -0.00526074
@@ -1201,26 +1221,6 @@ texture = ExtResource( 3 )
 offset = Vector2( -15.4446, -10.5814 )
 region_enabled = true
 region_rect = Rect2( 128, 81, 59, 47 )
-_sections_unfolded = [ "Region", "Z Index" ]
-
-[node name="leg_l" type="Sprite" parent="sprites" index="1"]
-
-position = Vector2( 12, -37.5 )
-z_index = -1
-texture = ExtResource( 3 )
-offset = Vector2( 0, 18 )
-region_enabled = true
-region_rect = Rect2( 65, 216, 14, 39 )
-_sections_unfolded = [ "Region", "Z Index" ]
-
-[node name="leg_r" type="Sprite" parent="sprites" index="2"]
-
-position = Vector2( -10, -39 )
-z_index = -1
-texture = ExtResource( 3 )
-offset = Vector2( 0, 20 )
-region_enabled = true
-region_rect = Rect2( 1, 216, 14, 39 )
 _sections_unfolded = [ "Region", "Z Index" ]
 
 
