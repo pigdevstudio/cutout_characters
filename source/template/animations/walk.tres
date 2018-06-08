@@ -63,7 +63,7 @@ tracks/4/keys = {
 "times": PoolRealArray( 0, 0.1, 0.25, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 2.40747e-07, -36.5 ), Vector2( 6.85453e-07, -34.5 ), Vector2( 2.40747e-07, -36.5 ), Vector2( 6.85453e-07, -34.5 ) ]
+"values": [ Vector2( 2.40747e-07, -36.5 ), Vector2( 6.85453e-07, -31 ), Vector2( 2.40747e-07, -36.5 ), Vector2( 6.85453e-07, -31 ) ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("sprites/body:rotation_degrees")
@@ -73,7 +73,7 @@ tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.1, 0.25, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"transitions": PoolRealArray( 0.25, 1, 0.25, 1 ),
 "update": 0,
 "values": [ 8.4967, 8.4967, 8.4967, 8.4967 ]
 }

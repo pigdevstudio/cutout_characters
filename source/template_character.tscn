@@ -38,7 +38,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="leg_l" type="Sprite" parent="sprites" index="0"]
 
-position = Vector2( 12, -37.5 )
+position = Vector2( -1.02524, -36.6779 )
+rotation = -0.377576
 z_index = -1
 texture = ExtResource( 9 )
 offset = Vector2( 0, 18 )
@@ -48,7 +49,8 @@ _sections_unfolded = [ "Region", "Z Index" ]
 
 [node name="leg_r" type="Sprite" parent="sprites" index="1"]
 
-position = Vector2( -10, -39 )
+position = Vector2( -1.32212, -37.1358 )
+rotation = 0.135629
 z_index = -1
 texture = ExtResource( 9 )
 offset = Vector2( 0, 20 )
@@ -58,8 +60,8 @@ _sections_unfolded = [ "Region", "Z Index" ]
 
 [node name="body" type="Sprite" parent="sprites" index="2"]
 
-position = Vector2( 2.40747e-07, -36.5 )
-rotation = -0.00526074
+position = Vector2( 4.16397e-07, -34.3276 )
+rotation = 0.148295
 texture = ExtResource( 9 )
 offset = Vector2( 0.960531, -20.4948 )
 region_enabled = true
@@ -68,7 +70,8 @@ _sections_unfolded = [ "Region" ]
 
 [node name="head" type="Sprite" parent="sprites/body" index="0"]
 
-position = Vector2( 1.27354, -51.994 )
+position = Vector2( 1.95481, -52.0346 )
+rotation = -0.258775
 texture = ExtResource( 10 )
 offset = Vector2( 0.128969, -21.4457 )
 region_enabled = true
@@ -77,8 +80,8 @@ _sections_unfolded = [ "Region", "Visibility", "Z Index" ]
 
 [node name="arm_l" type="Sprite" parent="sprites/body" index="1"]
 
-position = Vector2( 14.4868, -41.4948 )
-rotation = -0.611825
+position = Vector2( -5.19115, -38.5859 )
+rotation = 0.0471897
 z_index = -1
 texture = ExtResource( 9 )
 offset = Vector2( 0, 18 )
@@ -88,8 +91,8 @@ _sections_unfolded = [ "Region", "Z Index" ]
 
 [node name="arm_r" type="Sprite" parent="sprites/body" index="2"]
 
-position = Vector2( -12.5211, -42.4922 )
-rotation = 0.610057
+position = Vector2( -12.4316, -38.7841 )
+rotation = -0.541098
 texture = ExtResource( 9 )
 offset = Vector2( 0, 20 )
 region_enabled = true
